@@ -83,6 +83,11 @@ Power BI Desktop was connected to the MySQL database to visualize and analyze sa
 - **Field Used:** Revenue  
 - **Business Value:** Displays overall revenue at a glance.
 
+### 4️⃣ Total Number of Products
+- **Chart Type:** Card  
+- **Field Used:** ProductName (Count) or SaleID (Count)  
+- **Business Value:** Shows the total number of products/sales records available in the dataset, providing quick volume context.
+
 ---
 
 ## 🔄 Data Refresh & Validation
@@ -90,6 +95,12 @@ To validate data refresh functionality, new records were added directly to the M
 
 ```sql
 INSERT INTO Sales VALUES
-(12, 'Smart TV', 'Electronics', '2024-02-07', 3, 180000);
+(12, 'Smart TV', 'Electronics', '2024-02-07', 3, 180000),
+(13, 'Wireless Earbuds', 'Electronics', '2024-02-07', 10, 90000),
+(14, 'Gaming Console', 'Electronics', '2024-02-07', 2, 120000),
+(15, 'Power Bank', 'Electronics', '2024-02-07', 15, 45000),
+(16, 'Router', 'Electronics', '2024-02-07', 5, 35000);
 ```
+## The screenshot below shows the final Sales Dashboard with all charts and KPIs.
+
 ![Sales Dashboard](Screenshot/sales_dashboard.png)
